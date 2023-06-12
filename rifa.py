@@ -45,7 +45,7 @@ def definir_taxa_de_administracao():
 
 def calcular_valor_arrecadado(pontos, valor_ponto, taxa_administracao):
     total_arrecadado = len(pontos) * valor_ponto
-    valor_liquido = total_arrecadado * (1 - taxa_administracao / 100)
+    valor_liquido = total_arrecadado * (taxa_administracao / 100)
     valor_taxa_administracao = total_arrecadado - valor_liquido
     print(f"Valor arrecadado: R${total_arrecadado:.2f}")
     print(f"Valor líquido: R${valor_liquido:.2f}")
